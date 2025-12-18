@@ -1,6 +1,8 @@
 # mcp-context-forge
 - Github: https://github.com/ibm/mcp-context-forge
 - Docs: https://ibm.github.io/mcp-context-forge/
+- Code Wiki: https://codewiki.google/github.com/ibm/mcp-context-forge
+- Deep Wiki: https://deepwiki.com/IBM/mcp-context-forge
 
 # 使用 Docker 啟動
 ```shell
