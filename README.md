@@ -21,13 +21,19 @@ docker run -d --name mcpgateway \
 ```
 
 #
+取得 gateways 清單
+```shell
+curl --location 'http://localhost:4444/gateways' \
+  --header 'Authorization: Bearer ${MCPGATEWAY_BEARER_TOKEN}'
+```
+
 取得 Tools 清單
 ```shell
 curl --location 'http://localhost:4444/tools' \
   --header 'Authorization: Bearer ${MCPGATEWAY_BEARER_TOKEN}'
 ```
 
-
+透過 Gateway 連線
 ```shell
 # Transport Type: SSE, URL: http://localhost:4444/servers/UUID_OF_SERVER_1/sse,  Header Name: "Authorization", Bearer Token
 http://localhost:4444/servers/${UUID_OF_SERVER}/sse
