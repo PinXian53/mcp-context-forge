@@ -20,7 +20,9 @@ docker run -d --name mcpgateway \
   ghcr.io/ibm/mcp-context-forge:0.9.0
 ```
 
-#
+# API Endpoints
+> https://github.com/ibm/mcp-context-forge?tab=readme-ov-file#api-endpoints
+
 取得 gateways 清單
 ```shell
 curl --location 'http://localhost:4444/gateways' \
