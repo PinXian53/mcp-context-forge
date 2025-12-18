@@ -41,3 +41,7 @@ curl --location 'http://localhost:4444/tools' \
 http://localhost:4444/servers/${UUID_OF_SERVER}/sse
 http://localhost:4444/servers/${UUID_OF_SERVER}/mcp
 ```
+
+# REST API to MCP
+1. 在 Tools 頁面，使用 Add New Tool from REST API 建立新的 Tool
+2. 在 Virtual Servers 頁面，選擇剛剛建立的 Tool，再建立 MCP Server
