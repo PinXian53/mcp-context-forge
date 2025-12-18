@@ -29,13 +29,19 @@ curl --location 'http://localhost:4444/gateways' \
   --header 'Authorization: Bearer ${MCPGATEWAY_BEARER_TOKEN}'
 ```
 
-取得 Tools 清單
+取得 virtual servers 清單
+```shell
+curl --location 'http://localhost:4444/servers' \
+  --header 'Authorization: Bearer ${MCPGATEWAY_BEARER_TOKEN}'
+```
+
+取得 tools 清單
 ```shell
 curl --location 'http://localhost:4444/tools' \
   --header 'Authorization: Bearer ${MCPGATEWAY_BEARER_TOKEN}'
 ```
 
-透過 Gateway 連線
+連線 mcp (透過 gateway、virtual servers)
 ```shell
 # Transport Type: SSE, URL: http://localhost:4444/servers/UUID_OF_SERVER_1/sse,  Header Name: "Authorization", Bearer Token
 http://localhost:4444/servers/${UUID_OF_SERVER}/sse
